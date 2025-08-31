@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Summet Kumar </title>
+  <title>Sumeet Kumar </title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
 
@@ -29,6 +29,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"      />
 </head>
 
 <body class="index-page">
@@ -37,7 +39,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Summet kumar</h1>
+        <h1 class="sitename">Sumeet kumar</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -59,12 +61,12 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <div class="header-social-links">
+      <!-- <div class="header-social-links">
         <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
+      </div> -->
     </div>
   </header>
 
@@ -297,9 +299,10 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About Company</h2>
-        <p class="pb-4">
-         We Are The Best Online Payment Gateway Agency
+        <p class="pb-4" style="font-weight: bold; font-size: 24px;">
+          We Are The Best Online Payment Gateway Agency
         </p>
+
       </div>
       <!-- End Section Title -->
 
@@ -376,6 +379,51 @@
       </div>
     </section>
     <!-- /Other Section -->
+    <!-- Gallery Section -->
+    <section id="gallery" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-1 justify-content-center">
+          <div id="siteGallery" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
+            data-bs-pause="false" data-bs-wrap="true" data-bs-touch="true">
+            <!-- 
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#siteGallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#siteGallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#siteGallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/img1.jpg" class="d-block w-100 gallery-img" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img2.jpg" class="d-block w-100 gallery-img" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img3.jpg" class="d-block w-100 gallery-img" alt="Third slide">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#siteGallery" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#siteGallery" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Gallery Section End -->
 
     <!-- Contact Section  -->
     <section id="contact" class="contact section">
@@ -496,7 +544,7 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center mb-5 pb-2"><i
       class="bi bi-arrow-up-short"></i></a>
 
 
@@ -513,8 +561,7 @@
         ⭐⭐⭐⭐☆ <!-- 4.5 stars -->
       </div>
       <p class="stats">Review Us</p>
-      <a href="https://g.page/r/CVZb_NFXcBeDEAI/review"
-        target="_blank" class="review-btn">
+      <a href="https://g.page/r/CVZb_NFXcBeDEAI/review" target="_blank" class="review-btn">
         Write a Review
       </a>
     </div>
@@ -581,17 +628,204 @@
     .review-btn:hover {
       background: #357ae8;
     }
+
+    @media (max-width: 768px) {
+      .google-review-badge {
+        bottom: 80px;
+        /* extra spacing */
+        left: 20px;
+        width: auto;
+        /* shrink box */
+        padding: 10px;
+        gap: 10px;
+      }
+
+      /* Hide text content in mobile */
+      .review-text .title,
+      .review-text .stars,
+      .review-text .stats {
+        display: none;
+      }
+
+      /* Make review button circular */
+      .review-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0;
+        /* hide text */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #4285F4;
+      }
+
+      /* Add icon inside circle */
+      .review-btn::before {
+        content: "✍️";
+        /* you can change to 📝 or ★ */
+        font-size: 22px;
+        color: #fff;
+      }
+    }
   </style>
+
+  <!-- Mobile Bottom Bar -->
+  <div class="mobile-bottom-bar">
+    <!-- Call Button -->
+    <!-- Floating Call Button -->
+    <a href="tel:+917360979356" class="bottom-btn call-btn">
+      <i class="bi bi-telephone-fill small-icon"></i>
+      <span>Phone</span>
+    </a>
+
+
+
+    <!-- WhatsApp Button (center) -->
+    <a href="https://wa.me/+917360979356?text=Contact%20Us%20for%20Any%20Questions" target="_blank"
+      class="bottom-btn whatsapp-btn">
+      <i class="bi bi-whatsapp"></i>
+      <span class="notify-dot"></span>
+    </a>
+
+
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sumitkaushik647@gmail.com&su=Inquiry&body=Hello,%20I%20would%20like%20to%20know%20more..."
+      target="_blank" class="bottom-btn email-btn">
+      <i class="bi bi-envelope-fill small-icon"></i>
+      <span>Email</span>
+    </a>
+
+  </div>
+
+
 
 
 
   <!-- Floating WhatsApp Chat Button -->
-  <a href="https://wa.me/+917360979356?text=Contact%20Us%20for%20Any%20Questions%2C%20How%20may%20I%20help%20you" target="_blank" class="whatsapp-chat-btn">
+  <a href="https://wa.me/+917360979356?text=Contact%20Us%20for%20Any%20Questions%2C%20How%20may%20I%20help%20you"
+    target="_blank" class="whatsapp-chat-btn">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-    Chat
   </a>
 
   <style>
+    /* Bounce animation */
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-12px);
+      }
+
+      60% {
+        transform: translateY(-6px);
+      }
+    }
+
+    /* Apply bounce effect */
+    .whatsapp-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      animation: bounce 2s infinite;
+      /* 👈 continuous bounce */
+    }
+
+    .whatsapp-btn i {
+      font-size: 28px;
+      /* make icon big */
+      color: #fff !important;
+      /* force white color */
+    }
+
+    /* Mobile Bottom Bar */
+    .mobile-bottom-bar {
+      position: fixed;
+      bottom: 15px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    /* Common button styles */
+    .bottom-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      /* reduced size */
+      height: 40px;
+      /* reduced size */
+      border-radius: 50%;
+      font-size: 18px;
+      /* smaller icons */
+      color: #fff;
+
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .bottom-btn {
+      display: flex;
+      flex-direction: column;
+      /* icon on top, text below */
+      align-items: center;
+      text-decoration: none;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .call-btn {
+      color: rgb(81, 195, 81);
+    }
+
+    .whatsapp-btn {
+      background: #25D366;
+      /* WhatsApp green */
+      transform: scale(1.2);
+      /* stays larger in center */
+      animation: bounce 2s infinite;
+    }
+
+    .email-btn {
+      color: #d93025;
+    }
+
+    .bottom-btn span {
+      color: black;
+    }
+
+
+    .bottom-btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Show only in mobile */
+    @media (min-width: 768px) {
+      .mobile-bottom-bar {
+        display: none;
+      }
+    }
+
+
     .back-to-top {
       position: fixed;
       bottom: 15px;
@@ -646,6 +880,39 @@
       color: #fff;
     }
 
+    .small-icon {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      line-height: 10px;
+    }
+
+
+    @media (max-width: 768px) {
+      .whatsapp-chat-btn {
+        display: none;
+      }
+    }
+
+    .gallery-img {
+      height: 520px;
+      object-fit: fill;
+      /* keeps images cropped nicely */
+    }
+
+    .notify-dot {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      /* white border so dot looks clean */
+    }
+
     /* Bounce Animation */
     @keyframes bounceUpDown {
 
@@ -676,6 +943,9 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"
+        ></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
