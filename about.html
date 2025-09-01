@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title> About Us - Summet Kumar
+  <title> About Us - Sumeet Kumar
   </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -40,7 +40,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Summet kumar</h1>
+        <h1 class="sitename">Sumeet kumar</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -63,10 +63,10 @@
       </nav>
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
       </div>
 
     </div>
@@ -188,8 +188,381 @@
 
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+ <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center mb-5 pb-2"><i
       class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Floating Google Review Badge -->
+  <div class="google-review-badge">
+    <div class="google-icon">
+      <img
+        src="https://dev-reviews-mkp.nyc3.cdn.digitaloceanspaces.com/dev-mkp-google-reviews/google-reviews/Icons/LeadIconPack/icon-brand-google-original.svg"
+        alt="Google Logo" />
+    </div>
+    <div class="review-text">
+      <p class="title">Google · Reviews</p>
+      <div class="stars">
+        ⭐⭐⭐⭐☆ <!-- 4.5 stars -->
+      </div>
+      <p class="stats">Review Us</p>
+      <a href="https://g.page/r/CVZb_NFXcBeDEAI/review" target="_blank" class="review-btn">
+        Write a Review
+      </a>
+    </div>
+  </div>
+
+  <style>
+    .google-review-badge {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 12px 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      font-family: "Poppins", sans-serif;
+      z-index: 9999;
+      width: 280px;
+    }
+
+    .google-icon img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .review-text {
+      flex: 1;
+    }
+
+    .review-text .title {
+      font-weight: 600;
+      font-size: 14px;
+      margin: 0;
+      color: #202124;
+    }
+
+    .review-text .stars {
+      font-size: 16px;
+      color: #fbbc05;
+      /* Google Yellow for stars */
+    }
+
+    .review-text .stats {
+      font-size: 13px;
+      color: #555;
+      margin: 4px 0;
+    }
+
+    .review-btn {
+      display: inline-block;
+      padding: 6px 10px;
+      font-size: 13px;
+      background: #4285F4;
+      /* Google Blue */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .review-btn:hover {
+      background: #357ae8;
+    }
+
+    @media (max-width: 768px) {
+      .google-review-badge {
+        bottom: 80px;
+        /* extra spacing */
+        left: 20px;
+        width: auto;
+        /* shrink box */
+        padding: 10px;
+        gap: 10px;
+      }
+
+      /* Hide text content in mobile */
+      .review-text .title,
+      .review-text .stars,
+      .review-text .stats {
+        display: none;
+      }
+
+      /* Make review button circular */
+      .review-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0;
+        /* hide text */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #4285F4;
+      }
+
+      /* Add icon inside circle */
+      .review-btn::before {
+        content: "✍️";
+        /* you can change to 📝 or ★ */
+        font-size: 22px;
+        color: #fff;
+      }
+    }
+  </style>
+
+  <!-- Mobile Bottom Bar -->
+  <div class="mobile-bottom-bar">
+    <!-- Call Button -->
+    <!-- Floating Call Button -->
+    <a href="tel:+917360979356" class="bottom-btn call-btn">
+      <i class="bi bi-telephone-fill small-icon"></i>
+      <span>Phone</span>
+    </a>
+    <!-- WhatsApp Button (center) -->
+    <a href="https://wa.me/+917360979356?text=Contact%20Us%20for%20Any%20Questions" target="_blank"
+      class="bottom-btn whatsapp-btn">
+      <i class="bi bi-whatsapp"></i>
+      <span class="notify-dot"></span>
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sumitkaushik647@gmail.com&su=Inquiry&body=Hello,%20I%20would%20like%20to%20know%20more..."
+      target="_blank" class="bottom-btn email-btn">
+      <i class="bi bi-envelope-fill small-icon"></i>
+      <span>Email</span>
+    </a>
+
+  </div>
+
+  <!-- Floating WhatsApp Chat Button -->
+  <a href="https://wa.me/+917360979356?text=Contact%20Us%20for%20Any%20Questions%2C%20How%20may%20I%20help%20you"
+    target="_blank" class="whatsapp-chat-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+  <style>
+    /* Bounce animation */
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-12px);
+      }
+
+      60% {
+        transform: translateY(-6px);
+      }
+    }
+
+    /* Apply bounce effect */
+    .whatsapp-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      animation: bounce 2s infinite;
+      /* 👈 continuous bounce */
+    }
+
+    .whatsapp-btn i {
+      font-size: 28px;
+      /* make icon big */
+      color: #fff !important;
+      /* force white color */
+    }
+
+    /* Mobile Bottom Bar */
+    .mobile-bottom-bar {
+      position: fixed;
+      bottom: 15px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    /* Common button styles */
+    .bottom-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      /* reduced size */
+      height: 40px;
+      /* reduced size */
+      border-radius: 50%;
+      font-size: 18px;
+      /* smaller icons */
+      color: #fff;
+
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .bottom-btn {
+      display: flex;
+      flex-direction: column;
+      /* icon on top, text below */
+      align-items: center;
+      text-decoration: none;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .call-btn {
+      color: rgb(81, 195, 81);
+    }
+
+    .whatsapp-btn {
+      background: #25D366;
+      /* WhatsApp green */
+      transform: scale(1.2);
+      /* stays larger in center */
+      animation: bounce 2s infinite;
+    }
+
+    .email-btn {
+      color: #d93025;
+    }
+
+    .bottom-btn span {
+      color: black;
+    }
+
+
+    .bottom-btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Show only in mobile */
+    @media (min-width: 768px) {
+      .mobile-bottom-bar {
+        display: none;
+      }
+    }
+
+
+    .back-to-top {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      background: #333;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 50%;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+      z-index: 9999;
+      transition: 0.3s;
+    }
+
+    .back-to-top:hover {
+      background: #555;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-chat-btn {
+      position: fixed;
+      bottom: 15px;
+      right: 70px;
+      /* push left of back-to-top */
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #25D366;
+      /* WhatsApp green */
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+      z-index: 9999;
+      transition: 0.3s;
+      animation: bounceUpDown 2s infinite ease-in-out;
+    }
+
+    .whatsapp-chat-btn img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .whatsapp-chat-btn:hover {
+      background: #1ebe5a;
+      color: #fff;
+    }
+
+    .small-icon {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      line-height: 10px;
+    }
+
+
+    @media (max-width: 768px) {
+      .whatsapp-chat-btn {
+        display: none;
+      }
+    }
+
+    .gallery-img {
+      height: 520px;
+      object-fit: fill;
+      /* keeps images cropped nicely */
+    }
+
+    .notify-dot {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      /* white border so dot looks clean */
+    }
+
+    /* Bounce Animation */
+    @keyframes bounceUpDown {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+        /* moves up */
+      }
+    }
+  </style>
+
+
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -204,10 +577,12 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"
+        ></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
