@@ -1450,3 +1450,14 @@ section,
 .bounce {
   animation: bounce 2s infinite;
 }
+.header-social-links a.whatsapp {
+  background-color: #25D366; 
+  color: #fff; 
+  padding: 8px 8px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-left: 8px;
+}
