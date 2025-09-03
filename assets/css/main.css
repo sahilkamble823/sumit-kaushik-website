@@ -1572,3 +1572,8 @@ section,
   color: #000;
   /* adjust color if needed */
 }
+@media (max-width: 768px) {
+  .header-social-links {
+    display: none ;
+  }
+}
