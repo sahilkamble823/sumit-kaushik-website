@@ -176,7 +176,6 @@ h6 {
   font-size: 20px;
   margin: 0;
   font-weight: 500;
-  
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -744,13 +743,13 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  position: relative;
   width: 100%;
   min-height: calc(100vh - 82px);
+  position: relative;
+  padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -759,57 +758,38 @@ section,
   }
 }
 
-/* slideshow container */
-.hero-slideshow {
+.hero img {
   position: absolute;
   inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
-  display: flex;
-  animation: slideShow 10s infinite;
-}
-
-/* each image takes full section space */
-.hero-slideshow img {
-  flex: 0 0 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;  /* makes sure image covers full hero */
-}
-
-/* slide animation */
-@keyframes slideShow {
-  0%   { transform: translateX(0); }
-  45%  { transform: translateX(0); }
-  50%  { transform: translateX(-100%); }
-  95%  { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
+  object-fit: fit;
+  z-index: 1;
 }
 
 .hero .container {
   position: relative;
   z-index: 3;
-  color: #fff;
 }
-
 
 .hero h2 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-    color: var(--heading-color, #fff);
 }
 
 .hero p {
   margin: 10px 0 0 0;
   font-size: 24px;
-  color: var(--heading-color, #fff);
+  color: var(--heading-color);
 }
 
 .hero .btn-get-started {
-  color: var(--contrast-color, #fff);
-  background: var(--accent-color, #007bff);
-  font-family: var(--heading-font, sans-serif);
+  color: #fff;
+  /* White text */
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  font-family: var(--heading-font);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
@@ -817,13 +797,19 @@ section,
   display: inline-block;
   padding: 12px 40px;
   border-radius: 50px;
-  transition: 0.5s;
+  transition: all 0.5s ease;
   margin-top: 30px;
+  border: none;
 }
 
 .hero .btn-get-started:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, white 20%);
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  transform: translateY(-3px);
+  /* Small lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* Soft shadow */
 }
+
 
 @media (max-width: 768px) {
   .hero h2 {
@@ -864,12 +850,62 @@ section,
   color: var(--accent-color);
   line-height: 0;
 }
+
 .about .content h2 {
   font-size: 18px;
   margin-right: 5px;
   color: var(--heading-color);
   line-height: 0;
 }
+
+.about .content p {
+  font-size: 16px;
+  /* Adjust for readability */
+  line-height: 1.6;
+  /* Better spacing between lines */
+  max-width: 800px;
+  /* Restrict width for cleaner layout */
+  margin: 0 auto;
+  /* Center align the text */
+  text-align: justify;
+  /* Keep your justification */
+}
+
+@media (min-width: 992px) {
+  .about .content p {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
+
+.about .btn-get-started {
+  color: #fff;
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  /* teal → green */
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  /* smaller text */
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 24px;
+  /* smaller padding */
+  border-radius: 30px;
+  /* smaller rounded corners */
+  transition: all 0.4s ease;
+  margin-top: 15px;
+  border: none;
+}
+
+.about .btn-get-started:hover {
+  background: linear-gradient(45deg, #38ef7d, #11998e);
+  /* reverse gradient */
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 
 /*--------------------------------------------------------------
 # Skills Section
@@ -1105,6 +1141,53 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+
+.services .service-item {
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  /* light gradient */
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  padding: 50px 25px;
+  text-align: center;
+  transition: all 0.4s ease;
+  border-radius: 18px;
+  /* softer corners */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient glow effect on hover */
+.services .service-item:hover {
+  background: linear-gradient(135deg, #fdfdfd, #f0f9ff);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+}
+
+/* Individual card gradient tones */
+.services .service-item.item-cyan {
+  background: linear-gradient(135deg, #e6faff, #ffffff);
+}
+
+.services .service-item.item-orange {
+  background: linear-gradient(135deg, #fff3e6, #ffffff);
+}
+
+.services .service-item.item-teal {
+  background: linear-gradient(135deg, #e6fff9, #ffffff);
+}
+
+.services .service-item.item-red {
+  background: linear-gradient(135deg, #ffe6e9, #ffffff);
+}
+
+.services .service-item.item-indigo {
+  background: linear-gradient(135deg, #f2e6ff, #ffffff);
+}
+
+.services .service-item.item-pink {
+  background: linear-gradient(135deg, #ffe6f3, #ffffff);
+}
+
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
@@ -1151,8 +1234,14 @@ section,
 
 .services .service-item p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
+}
+
+.services  .p {
+  font-size: 18px;
+  margin-bottom: 0;
+   font-weight: 700;
 }
 
 .services .service-item:hover {
@@ -1593,8 +1682,30 @@ section,
   color: #000;
   /* adjust color if needed */
 }
+
 @media (max-width: 768px) {
   .header-social-links {
-    display: none ;
+    display: none;
   }
+}
+
+.btn-contact {
+  display: inline-block;
+  padding: 6px 16px;
+  /* smaller padding */
+  background: linear-gradient(135deg, #00b894, #0984e3);
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  /* smaller text */
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+  background: linear-gradient(135deg, #0984e3, #00b894);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  color: #fff;
 }
