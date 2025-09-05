@@ -855,7 +855,7 @@ section,
   font-size: 18px;
   margin-right: 5px;
   color: var(--heading-color);
-  line-height: 0;
+  line-height: 1;
 }
 
 .about .content p {
@@ -874,7 +874,7 @@ section,
 @media (min-width: 992px) {
   .about .content p {
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 2;
   }
 }
 
