@@ -519,11 +519,6 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading" style="display:none;">Loading...</div>
-                  <div class="error-message text-danger"></div>
-                  <div class="sent-message text-success" style="display:none;">
-                    Your message is ready to be sent on WhatsApp!
-                  </div>
                   <button type="submit">Send Message</button>
                 </div>
               </div>
@@ -546,7 +541,6 @@
                 return;
               }
 
-              // WhatsApp Number (replace with your number)
               let phoneNumber = "917360979356";
 
               // Create WhatsApp message
@@ -557,18 +551,13 @@
                 `Subject: ${subject}\n` +
                 `Message: ${message}`;
 
-              // Encode message
               let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-              // Open WhatsApp
               window.open(url, "_blank");
-
-              // Success message
               document.querySelector(".sent-message").style.display = "block";
               document.querySelector(".error-message").innerText = "";
             });
           </script>
-          <!-- End Contact Form -->
         </div>
       </div>
     </section>
