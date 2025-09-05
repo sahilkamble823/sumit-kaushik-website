@@ -1238,10 +1238,9 @@ section,
   margin-bottom: 0;
 }
 
-.services  .p {
+.section-title p {
   font-size: 18px;
-  margin-bottom: 0;
-   font-weight: 700;
+  font-weight: 600;
 }
 
 .services .service-item:hover {
@@ -1319,6 +1318,33 @@ section,
 .services .service-item.item-pink:hover .icon path {
   fill: #f3268c;
 }
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Light gradients per service */
+.service-wedding {
+  background: linear-gradient(135deg, #ffe4ec, #fff7fa);
+}
+
+.service-corporate {
+  background: linear-gradient(135deg, #e6f7ff, #f9fcff);
+}
+
+.service-party {
+  background: linear-gradient(135deg, #a69251, #fffaf0);
+}
+
+.service-shoots {
+  background: linear-gradient(135deg, #a263aa, #faf5ff);
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Section

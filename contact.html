@@ -188,10 +188,10 @@
               // Create WhatsApp message
               let whatsappMessage =
                 `Hello, I would like to contact you:\n\n` +
-                `👤 Name: ${name}\n` +
-                `📧 Email: ${email}\n` +
-                `📌 Subject: ${subject}\n` +
-                `💬 Message: ${message}`;
+                ` Name: ${name}\n` +
+                `Email: ${email}\n` +
+                `Subject: ${subject}\n` +
+                `Message: ${message}`;
 
               // Encode message
               let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
