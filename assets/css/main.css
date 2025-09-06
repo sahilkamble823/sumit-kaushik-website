@@ -858,6 +858,21 @@ section,
   line-height: 2;
 }
 
+.about .content h5 {
+  font-size: 18px;
+  margin-right: 5px;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+.about .content span {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--heading-color);
+  font-weight: 500;
+}
+about .content strong {
+  font-size: 18px;
+}
 .about .content p {
   font-size: 16px;
   /* Adjust for readability */
@@ -1318,6 +1333,7 @@ section,
 .services .service-item.item-pink:hover .icon path {
   fill: #f3268c;
 }
+
 .service-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #333;
@@ -1325,7 +1341,7 @@ section,
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
 /* Light gradients per service */
