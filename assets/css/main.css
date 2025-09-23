@@ -1698,9 +1698,9 @@ about .content strong {
   padding: 0px;
 }
 
-.sitename {
+.header .logo .sitename {
   font-family: 'Karsu', cursive;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
   color: var(--accent-color);
   font-style: italic;
