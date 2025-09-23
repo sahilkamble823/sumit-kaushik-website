@@ -812,17 +812,17 @@ section,
 
 
 @media (max-width: 768px) {
- .hero h2 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-}
+  .hero h2 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+  }
 
- .hero p {
-  margin: 10px 0 0 0;
-  font-size: 18px;
-  color: var(--heading-color);
-}
+  .hero p {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    color: var(--heading-color);
+  }
 
 
   .hero img {
@@ -830,10 +830,12 @@ section,
     inset: 0;
     display: block;
     width: 100%;
-    
+
     object-fit: fit;
     z-index: 1;
   }
+
+
 }
 
 /*--------------------------------------------------------------
@@ -1696,12 +1698,16 @@ about .content strong {
   padding: 0px;
 }
 
-.header .logo .sitename {
-  font-weight: bold;
-  font-size: 20px;
+.sitename {
+  font-family: 'Karsu', cursive;
+  font-size: 36px;
+  font-weight: 600;
   color: var(--accent-color);
-  ;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  padding-bottom: 5px;
 }
+
 
 .header-social-links a.linkedin {
 
