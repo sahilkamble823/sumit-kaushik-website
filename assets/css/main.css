@@ -812,9 +812,11 @@ section,
 
 
 @media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
+ .hero h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
 
  .hero p {
   margin: 10px 0 0 0;
