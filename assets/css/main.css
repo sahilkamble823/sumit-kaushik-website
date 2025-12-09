@@ -843,7 +843,7 @@ section,
 --------------------------------------------------------------*/
 .about .content h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .about .content ul {
@@ -855,6 +855,9 @@ section,
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  font-size: 15px;
+   color: var(--heading-color);
+
 }
 
 .about .content ul strong {
@@ -869,7 +872,7 @@ section,
 }
 
 .about .content h2 {
-  font-size: 18px;
+  font-size: 16px;
   margin-right: 5px;
   color: var(--heading-color);
   line-height: 2;
@@ -894,7 +897,7 @@ about .content strong {
 }
 
 .about .content p {
-  font-size: 16px;
+  font-size: 14px;
   /* Adjust for readability */
   line-height: 1.6;
   /* Better spacing between lines */
@@ -908,7 +911,7 @@ about .content strong {
 
 @media (min-width: 992px) {
   .about .content p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
   }
 }
@@ -1691,11 +1694,13 @@ about .content strong {
 }
 
 .header .logo {
-  text-decoration: none !important;  /* remove underline */
+  text-decoration: none !important;
+  /* remove underline */
 }
 
 .header .logo:hover {
-  text-decoration: none !important;  /* prevent underline on hover */
+  text-decoration: none !important;
+  /* prevent underline on hover */
 }
 
 
